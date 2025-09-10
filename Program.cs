@@ -61,6 +61,7 @@ namespace ShapePractice
         }
         static int DisplayMenu()
         {
+            Console.WriteLine("------------------------");
             Console.WriteLine("Que Figura desea añadir:");
             Console.WriteLine("1. Cuadrado");
             Console.WriteLine("2. Triangulo");
@@ -71,6 +72,7 @@ namespace ShapePractice
             {
                 Console.WriteLine("6: Show Shapes");
             }
+            Console.WriteLine("------------------------");
             string optionInput = Console.ReadLine();
             return int.Parse(optionInput);
         }
@@ -83,6 +85,7 @@ namespace ShapePractice
                 Console.WriteLine($"{s.name} - Área: {s.GetArea()}");
             }
             AddShapes();
+            Console.WriteLine("------------------------");
         }
     }
 }
