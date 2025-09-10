@@ -82,7 +82,7 @@ namespace ShapePractice
             {
                 Console.WriteLine($"{s.name} - Área: {s.GetArea()}");
             }
-            DisplayMenu();
+            AddShapes();
         }
     }
 }
